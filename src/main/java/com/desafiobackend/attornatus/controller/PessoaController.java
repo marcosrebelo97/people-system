@@ -11,7 +11,6 @@ import org.springframework.web.bind.annotation.RestController;
 import com.desafiobackend.attornatus.entities.Pessoa;
 import com.desafiobackend.attornatus.repository.PessoaRepository;
 
-@CrossOrigin(origins = "http://localhost:8080")
 @RestController
 @RequestMapping(value = "/pessoas")
 public class PessoaController {
