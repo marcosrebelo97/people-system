@@ -6,4 +6,5 @@ Qualidade de código
 
 
     2. Em qual etapa da implementação você considera a qualidade de software?
-    Etapas da dase de testes.
+
+    R: Etapas da dase de testes.
