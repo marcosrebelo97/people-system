@@ -1,0 +1,203 @@
+{
+	"id": "0decb87d-e0a3-43e7-9171-7ea0027ac267",
+	"name": "Backend-Attornatus",
+	"timestamp": "2023-02-17T20:45:26.112Z",
+	"collection_id": "19986209-229abc09-86b4-45b6-b2b5-34a93754f996",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 8,
+	"totalFail": 2,
+	"results": [
+		{
+			"id": "e1b3836b-fded-419e-bdfc-3235044e4717",
+			"name": "Listar",
+			"url": "http://localhost:8080/pessoas",
+			"time": 32,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 204": true,
+				"Response time is less than 2000ms": true
+			},
+			"testPassFailCounts": {
+				"Status code is 204": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 2000ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				32
+			],
+			"allTests": [
+				{
+					"Status code is 204": true,
+					"Response time is less than 2000ms": true
+				}
+			]
+		},
+		{
+			"id": "cbb2ba95-6076-4db5-8bca-66b76a4c1c64",
+			"name": "Consulta By ID",
+			"url": "http://localhost:8080/pessoas/2",
+			"time": 11,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 204": true,
+				"Response time is less than 2000ms": true
+			},
+			"testPassFailCounts": {
+				"Status code is 204": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 2000ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				11
+			],
+			"allTests": [
+				{
+					"Status code is 204": true,
+					"Response time is less than 2000ms": true
+				}
+			]
+		},
+		{
+			"id": "0fdfc125-10fa-454e-a1cd-dfe3fdaa9aac",
+			"name": "Criar",
+			"url": "http://localhost:8080/pessoas/5",
+			"time": 7,
+			"responseCode": {
+				"code": 405,
+				"name": "Method Not Allowed"
+			},
+			"tests": {
+				"Status code is 204": false,
+				"Response time is less than 2000ms": true
+			},
+			"testPassFailCounts": {
+				"Status code is 204": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Response time is less than 2000ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				7
+			],
+			"allTests": [
+				{
+					"Status code is 204": false,
+					"Response time is less than 2000ms": true
+				}
+			]
+		},
+		{
+			"id": "b7996d35-9257-4885-9507-b5fba13d6733",
+			"name": "Deletar",
+			"url": "http://localhost:8080/pessoas/2",
+			"time": 13,
+			"responseCode": {
+				"code": 500,
+				"name": "Internal Server Error"
+			},
+			"tests": {
+				"Status code is 204": false,
+				"Response time is less than 2000ms": true
+			},
+			"testPassFailCounts": {
+				"Status code is 204": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Response time is less than 2000ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				13
+			],
+			"allTests": [
+				{
+					"Status code is 204": false,
+					"Response time is less than 2000ms": true
+				}
+			]
+		},
+		{
+			"id": "be13b82b-d44c-4199-91ba-a58c89dcd3d3",
+			"name": "Editar",
+			"url": "http://localhost:8080/pessoas/1",
+			"time": 26,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 204": true,
+				"Response time is less than 2000ms": true
+			},
+			"testPassFailCounts": {
+				"Status code is 204": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 2000ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				26
+			],
+			"allTests": [
+				{
+					"Status code is 204": true,
+					"Response time is less than 2000ms": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 89,
+	"collection": {
+		"requests": [
+			{
+				"id": "e1b3836b-fded-419e-bdfc-3235044e4717",
+				"method": "GET"
+			},
+			{
+				"id": "cbb2ba95-6076-4db5-8bca-66b76a4c1c64",
+				"method": "GET"
+			},
+			{
+				"id": "0fdfc125-10fa-454e-a1cd-dfe3fdaa9aac",
+				"method": "POST"
+			},
+			{
+				"id": "b7996d35-9257-4885-9507-b5fba13d6733",
+				"method": "DELETE"
+			},
+			{
+				"id": "be13b82b-d44c-4199-91ba-a58c89dcd3d3",
+				"method": "PUT"
+			}
+		]
+	}
+}
