@@ -8,7 +8,7 @@ import com.desafiobackend.attornatus.entities.Endereco;
 import com.desafiobackend.attornatus.repository.EnderecoRepository;
 
 public class EnderecoService {
-	
+
 	private EnderecoRepository enderecoRepository;
 
 	@Autowired

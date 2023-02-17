@@ -21,12 +21,9 @@ public class EnderecoRepository {
 	}
 
 	public void deleteById(Long id) {
-		// TODO Auto-generated method stub
-		
 	}
 
 	public Endereco save(Endereco endereco) {
-		// TODO Auto-generated method stub
 		return null;
 	}
 
