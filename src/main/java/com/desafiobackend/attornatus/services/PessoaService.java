@@ -11,7 +11,7 @@ import com.desafiobackend.attornatus.repository.PessoaRepository;
 
 @Service
 public class PessoaService {
-	
+
 	@Autowired
 	private PessoaRepository pessoaRepository;
 
@@ -31,5 +31,17 @@ public class PessoaService {
 		pessoaRepository.deleteById(id);
 	}
 
+	public Pessoa atualizarPessoa(Long id, Pessoa pessoa) {
+		Optional<Pessoa> pessoaOptional = pessoaRepository.findById(id);
+		if (pessoaOptional.isPresent()) {
+			Pessoa pessoaExistente = pessoaOptional.get();
+			pessoaExistente.setNome(pessoa.getNome());
+			pessoaExistente.setDataDeNascimento(pessoa.getDataDeNascimento());
+			pessoaExistente.setEndereco(pessoa.getEndereco());
+			return pessoaRepository.save(pessoaExistente);
+		} else {
+			throw new RuntimeException("Pessoa não encontrada");
+		}
+	}
 
 }
