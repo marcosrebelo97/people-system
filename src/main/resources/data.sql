@@ -6,4 +6,3 @@ INSERT INTO Endereco (cep, cidade, logradouro, numero) VALUES ('11111-111', 'Cid
 INSERT INTO Pessoa (data_de_nascimento, nome, endereco_id) VALUES ('1990-01-01', 'João Silva', 1);
 INSERT INTO Pessoa (data_de_nascimento, nome, endereco_id) VALUES ('1985-05-10', 'Maria Souza', 2);
 INSERT INTO Pessoa (data_de_nascimento, nome, endereco_id) VALUES ('2000-02-15', 'Pedro Santos', 3);
-
