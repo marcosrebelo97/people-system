@@ -20,20 +20,20 @@ import com.desafiobackend.attornatus.services.EnderecoService;
 
 @CrossOrigin(origins = "http://localhost:8080")
 @RestController
-@RequestMapping("/enderecos")
+@RequestMapping(value = "/enderecos")
 public class EnderecoController {
 
 	private EnderecoService enderecoService;
 
 	// Endpoint para listar todos os endereços
-	@GetMapping
+	@GetMapping("enderecos/{id}")
 	public ResponseEntity<List<Endereco>> listarEnderecos() {
 		List<Endereco> enderecos = enderecoService.listarEnderecos();
 		return ResponseEntity.ok(enderecos);
 	}
 
 	// Endpoint para criar um endereço
-	@PostMapping
+	@PostMapping("enderecos/{id}")
 	public ResponseEntity<Endereco> criarEndereco(@RequestBody Endereco endereco) {
 		Endereco novoEndereco = enderecoService.criarEndereco(endereco);
 		URI uri = ServletUriComponentsBuilder.fromCurrentRequest().path("/{id}").buildAndExpand(novoEndereco.getId())
@@ -42,7 +42,7 @@ public class EnderecoController {
 	}
 
 	// Endpoint para deletar um endereço
-	@DeleteMapping("/{id}")
+	@DeleteMapping("enderecos/{id}")
 	public ResponseEntity<Void> deletarEndereco(@PathVariable Long id) {
 		boolean sucesso = enderecoService.deletarEndereco(id);
 		if (sucesso) {
@@ -53,7 +53,7 @@ public class EnderecoController {
 	}
 
 	// Endpoint para atualizar um endereço
-	@PutMapping("/{id}")
+	@PutMapping("enderecos/{id}")
 	public ResponseEntity<Endereco> atualizarEndereco(@PathVariable Long id, @RequestBody Endereco endereco) {
 		Endereco enderecoAtualizado = enderecoService.atualizarEndereco(id, endereco);
 		if (enderecoAtualizado != null) {
