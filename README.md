@@ -7,5 +7,5 @@
   - Funcionalidades desenvolvidas: 
       - CRUD (criar, ler, atualizar, deletar) Pessoa e Endereço;
       - Informar qual endereço principal da Pessoa.
-  - Os testes foram realizados no Postman.
+  - Os testes foram realizados no Postman, arquivo: `attornatus.postman_test_run.json`
 
