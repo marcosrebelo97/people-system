@@ -5,7 +5,7 @@
       - Pessoa: ```nome, data de nascimento e endereço.```
       - Endereço: ```logradouro, CEP, número e cidade.```
   - Funcionalidades desenvolvidas: 
-      - CRUD (criar, ler, atualizar, deletar) Pessoa e Endereço;
+      - CRUD (criar, ler, atualizar, deletar) de Pessoa e Endereço;
       - Informar qual endereço principal da Pessoa.
   - Os testes foram realizados usando **Postman**, estão no arquivo: `attornatus.postman_test_run.json`
 
