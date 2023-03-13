@@ -2,8 +2,8 @@
 
 <h4> Descrição: </h4>
 
-  - Desenvolvimento de uma API REST utilizando **Spring Boot, Java 17** e **H2 database** para gestão de pessoas e dados residenciais. 
-  - Entidades definidas: Pessoa e Endereço
+Desenvolvimento de uma API REST utilizando **Spring Boot, Java 17** e **H2 database** para gestão de pessoas e dados residenciais. 
+  - Entidades e atributos definidos:
       - Pessoa: ```nome, data de nascimento e endereço.```
       - Endereço: ```logradouro, CEP, número e cidade.```
   - Funcionalidades desenvolvidas: 
