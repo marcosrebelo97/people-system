@@ -1,6 +1,6 @@
 <h3 align="center"> Sistema de Gerenciamento de Pessoas </h3> <br />
 
-  - Desnvolvimento de uma API REST utilizando **Spring Boot, Java 17** e **banco de dados H2** para gestão de pessoas e dados residenciais. 
+  - Desenvolvimento de uma API REST utilizando **Spring Boot, Java 17** e **banco de dados H2** para gestão de pessoas e dados residenciais. 
   - Entidades definidas: Pessoa e Endereço
       - Pessoa: ```nome, data de nascimento e endereço.```
       - Endereço: ```logradouro, CEP, número e cidade.```
